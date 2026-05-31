@@ -2,6 +2,14 @@
 
 **Nie znasz jeszcze C++?** Zacznij od **[Poradnika dla początkujących](PORADNIK.md)** — wyjaśnia `main`, `#include`, pętle `for`, funkcje, `if` i resztę używaną w zadaniach.
 
+0. Napisz program wypisujący na ekran tekst `Hello, World!` — najprostsze zadanie na start; uczy `#include`, `main()` i `std::cout`.
+
+[ROZWIĄZANIE TUTAJ - kliknij](0.cpp)
+
+01. Napisz program, ktory pyta uzytkownika o imie, wczytuje je i wypisuje na ekranie: `Czesc, ...` (z podanym imieniem). Uczy `cin` z tekstem (`std::string`).
+
+[ROZWIĄZANIE TUTAJ - kliknij](01.cpp)
+
 1. Napisz program wyznaczający wszystkie dzielniki liczby 80.
 
 [ROZWIĄZANIE TUTAJ - kliknij](1.cpp)
@@ -102,8 +110,8 @@
 Skompiluj i uruchom wybrane zadanie (terminal w folderze projektu):
 
 ```bash
-g++ -std=c++17 -Wall 1.cpp -o zad1 && ./zad1
+g++ -std=c++17 -Wall 0.cpp -o zad0 && ./zad0
 ```
 
-Zamień `1.cpp` i `zad1` na numer zadania (np. `19.cpp`). Zadanie 9 to instrukcja arkusza — plik [9.md](9.md).  
+Zamień `0.cpp` i `zad0` na numer zadania (np. `19.cpp`). Zadanie 9 to instrukcja arkusza — plik [9.md](9.md).  
 Składnię i pojęcia z kodu wyjaśnia [PORADNIK.md](PORADNIK.md).

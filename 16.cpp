@@ -14,6 +14,11 @@
 // iostream — wczytywanie (cin) i wypisywanie (cout) na ekran
 #include <iostream>
 
+// czy_pierwsza_long(n) — jak czy_pierwsza, ale dla long long (bardzo duże liczby, zad. 16).
+// Zwraca bool: true = pierwsza, false = nie (n < 2 lub ma dzielnik od 2 w górę).
+// √n = pierwiastek kwadratowy z n; w kodzie d*d <= n zamiast sqrt(n) — to samo co d <= √n.
+// Wystarczy do √n: przy n = a*b co najmniej jeden czynnik jest <= √n (np. 36 = 4*9).
+// bool i return — PORADNIK.md §11
 bool czy_pierwsza_long(long long n) {
     if (n < 2) return false;
     for (long long d = 2; d * d <= n; ++d)

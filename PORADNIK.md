@@ -1,7 +1,7 @@
 # Poradnik C++ — od zera
 
 Ten plik tłumaczy rzeczy z zadań 1–19 **prostym językiem**.  
-Nie musisz wszystkiego pamiętać na pamięć — po prostu wyszukaj, gdy w kodzie coś wygląda dziwnie.
+Nie musisz wszystkiego uczyć się na pamięć — po prostu wyszukaj, gdy w kodzie coś wygląda dziwnie.
 
 **Jak korzystać:** trzymaj ten plik obok otwartego `.cpp`, użyj wyszukiwania (Ctrl+F / Cmd+F) po słowie kluczowym (`for`, `vector`, `cin`…). Masz pytanie przy konkretnej linii w `5.cpp` lub `12.cpp`? Wyszukaj hasło w poradniku.
 
@@ -10,27 +10,27 @@ Nie musisz wszystkiego pamiętać na pamięć — po prostu wyszukaj, gdy w kodz
 ## Spis treści
 
 1. [Kompilacja i rodzaje plików](#1-kompilacja-i-rodzaje-plików)
-   - [Dwa rodzaje plików](#dwa-rodzaje-plików--najważniejsze)
-   - [Kompilacja krok po kroku](#co-to-jest-kompilacja)
-   - [Komenda `g++`](#komenda-krok-po-kroku)
+  - [Dwa rodzaje plików](#dwa-rodzaje-plików--najważniejsze)
+  - [Kompilacja krok po kroku](#co-to-jest-kompilacja)
+  - [Komenda `g++](#komenda-krok-po-kroku)`
 2. [Komentarze w kodzie](#2-komentarze-w-kodzie)
-3. [`#include` — biblioteki (przegląd)](#3-include--biblioteki-przegląd)
-4. [`std::` przed `cout` i `cin`](#4-dlaczego-jest-std-przed-cout-i-cin)
-5. [Funkcja `main()`](#5-funkcja-main--start-programu)
-   - [`return 0;`](#dlaczego-na-końcu-main-piszemy-return-0)
-6. [Zmienne, typy, `const`, `long long`](#6-zmienne-typy-const-long-long)
-   - [Tabela typów](#tabela-typów-te-z-ćwiczeń-i-okolice)
-   - [`long long` i `LL`](#long-long-i-sufiks-ll-zad-16-17)
-7. [`cout` i `cin`](#7-wypisywanie-na-ekran-i-wczytywanie-z-klawiatury)
-   - [Wypisywanie (`cout`)](#wypisywanie-na-ekran-stdcout)
-   - [Wczytywanie (`cin`)](#wczytywanie-z-klawiatury-stdcin)
+3. `[#include` — biblioteki (przegląd)](#3-include--biblioteki-przegląd)
+4. `[std::` przed `cout` i `cin](#4-dlaczego-jest-std-przed-cout-i-cin)`
+5. [Funkcja `main()](#5-funkcja-main--start-programu)`
+  - `[return 0;](#dlaczego-na-końcu-main-piszemy-return-0)`
+6. [Zmienne, typy, `const`, `long long](#6-zmienne-typy-const-long-long)`
+  - [Tabela typów](#tabela-typów-te-z-ćwiczeń-i-okolice)
+  - `[long long` i `LL](#long-long-i-sufiks-ll-zad-16-17)`
+7. `[cout` i `cin](#7-wypisywanie-na-ekran-i-wczytywanie-z-klawiatury)`
+  - [Wypisywanie (`cout`)](#wypisywanie-na-ekran-stdcout)
+  - [Wczytywanie (`cin`)](#wczytywanie-z-klawiatury-stdcin)
 8. [Wyrażenia i operatory](#8-wyrażenia-znaki-porównania-łączenie-warunków-=-vs-)
-9. [Instrukcja `if`](#9-instrukcja-if--jeślito)
-10. [Pętle `for` i `while`](#10-pętle-for-i-while)
-11. [Własne funkcje i `bool`](#11-własne-funkcje-i-bool)
-12. [Biblioteka `cmath`](#12-biblioteka-cmath-zad-6-7-10)
-13. [`vector` (zad. 19)](#13-vector--elastyczna-tablica-zad-19)
-14. [Nawiasy `( )`, `[ ]`, `{ }`, `< >`](#14-nawiasy-----)
+9. [Instrukcja `if](#9-instrukcja-if--jeślito)`
+10. [Pętle `for` i `while](#10-pętle-for-i-while)`
+11. [Własne funkcje i `bool](#11-własne-funkcje-i-bool)`
+12. [Biblioteka `cmath](#12-biblioteka-cmath-zad-6-7-10)`
+13. `[vector` (zad. 19)](#13-vector--elastyczna-tablica-zad-19)
+14. [Nawiasy `( )`, `[ ]`, `{ }`, `< >](#14-nawiasy-----)`
 15. [Jak czytać pliki zadań](#15-jak-czytać-pliki-zadań--kolejność-nauki)
 16. [Słowniczek](#16-słowniczek-na-szybko)
 
@@ -45,7 +45,7 @@ Nie musisz wszystkiego pamiętać na pamięć — po prostu wyszukaj, gdy w kodz
 | **Z kodem**     | `1.cpp`, `7.cpp`                                    | **Ty** w edytorze i program `g++` | Zwykły plik tekstowy — tu piszesz i zapisujesz rozwiązanie          |
 | **Wykonywalny** | `zad1`, `zad7` (Mac/Linux) lub `zad1.exe` (Windows) | **Komputer** (system)             | Program gotowy do uruchomienia — **nie** edytuje się go jak notatki |
 
-**`.cpp`** = plik z kodem C++ (litera **c** + **plus** + **plus**).  
+`**.cpp`** = plik z kodem C++ (litera **c** + **plus** + **plus**).  
 To **przepis** — opis krok po kroku, co program ma zrobić.
 
 **Plik wykonywalny** = **gotowe danie** — komputer już wie, co ma robić, żeby np. policzyć dzielniki i wypisać wynik na ekranie.
@@ -62,7 +62,7 @@ To **przepis** — opis krok po kroku, co program ma zrobić.
 
 **Kompilacja** to **tłumaczenie** kodu z języka C++ (dla ludzi) na język, który rozumie komputer.
 
-1. Piszesz / poprawiasz plik **`1.cpp`**.
+1. Piszesz / poprawiasz plik `**1.cpp`**.
 2. Uruchamiasz **program `g++`** (to on „tłumaczy” kod).
 3. Program sprawdza, czy w kodzie nie ma literówek i błędów — jeśli coś źle, **nie** powstanie program do uruchomienia, tylko komunikaty o błędzie.
 4. Gdy wszystko OK — powstaje **plik wykonywalny**.
@@ -94,25 +94,25 @@ Na **Windows** w PowerShell często: `.\zad1.exe` (jeśli program dodał `.exe`)
 
 ### Jakie pliki mogą powstać na dysku?
 
-| Plik                                 | Kiedy powstaje                      | Czy musisz go znać?                        |
-| ------------------------------------ | ----------------------------------- | ------------------------------------------ |
-| `1.cpp`                              | Ty zapisujesz w edytorze            | **Tak** — tu pracujesz                     |
-| `zad1` (wykonywalny)                 | po udanej kompilacji                | **Tak** — to uruchamiasz                   |
-| `1.o` lub `1.obj`                    | czasem pośredni „klocek” kompilacji | Na start **nie** — `g++` robi to sam w tle |
-| pliki w folderze `.cursor_temp` itd. | narzędzia, nie C++                  | Można ignorować                            |
+| Plik                 | Kiedy powstaje                      | Czy musisz go znać?                        |
+|----------------------|-------------------------------------|--------------------------------------------|
+| `1.cpp`              | Ty zapisujesz w edytorze            | **Tak** — tu pracujesz                     |
+| `zad1` (wykonywalny) | po udanej kompilacji                | **Tak** — to uruchamiasz                   |
+| `1.o` lub `1.obj`    | czasem pośredni „klocek” kompilacji | Na start **nie** — `g++` robi to sam w tle |
+
 
 Po kompilacji w folderze masz więc zwykle:
 
-- **`1.cpp`** — zostaje; edytujesz go przy poprawkach.
-- **`zad1`** — można usunąć i zbudować ponownie; po zmianie w `.cpp` **trzeba skompilować jeszcze raz**, inaczej uruchomisz **starą** wersję programu.
+- `**1.cpp`** — zostaje; edytujesz go przy poprawkach.
+- `**zad1`** — można usunąć i zbudować ponownie; po zmianie w `.cpp` **trzeba skompilować jeszcze raz**, inaczej uruchomisz **starą** wersję programu.
 
 ---
 
 ### Co edytujesz, a czego nie
 
 | Działanie                             | `1.cpp`            | plik wykonywalny `zad1`                   |
-| ------------------------------------- | ------------------ | ----------------------------------------- |
-| Otworzyć w Cursorze / Notepad++       | tak                | nie ma sensu (to nie tekst dla człowieka) |
+|---------------------------------------|--------------------|-------------------------------------------|
+| Otworzyć w edytorze                   | tak                | nie ma sensu (to nie tekst dla człowieka) |
 | Zmienić kod                           | tak                | nie — zmiany robi się w `.cpp`            |
 | Uruchomić program                     | nie (sam z siebie) | tak (`./zad1`)                            |
 | Wysłać nauczycielowi jako rozwiązanie | **tak** — `.cpp`   | zwykle **nie** — oddajesz kod źródłowy    |
@@ -121,7 +121,7 @@ Po kompilacji w folderze masz więc zwykle:
 
 ### Krótka ściąga: cały proces
 
-1. Edytuj **`N.cpp`** (np. zadanie 7 → `7.cpp`).
+1. Edytuj `**N.cpp`** (np. zadanie 7 → `7.cpp`).
 2. Skompiluj: `g++ -std=c++17 -Wall 7.cpp -o zad7`
 3. Uruchom: `./zad7`
 4. Zmieniłeś kod? Powtórz kroki **2 i 3**.
@@ -130,7 +130,7 @@ Potem w programie może coś **wypisać** na ekran (`cout`) albo **wczytać** li
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ od zera. Właśnie przeczytałam, że plik .cpp to kod dla ludzi, a po kompilacji (g++) powstaje plik wykonywalny, który uruchamiam przez ./zad1. Wyjaśnij mi prostym językiem po polsku: (1) czym kompilator różni się od interpretera, (2) dlaczego po każdej zmianie w .cpp muszę kompilować od nowa, (3) co oznaczają typowe komunikaty błędu kompilacji na przykładzie. Podaj 2–3 krótkie przykłady komend w terminalu. Bez zaawansowanego żargonu.
@@ -156,7 +156,7 @@ Na końcu — blok **„JAK TO DZIAŁA?”** z opisem całego algorytmu.
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i wiem, że komentarze // oraz /* */ kompilator ignoruje. Wyjaśnij po polsku prostymi słowami: kiedy warto pisać komentarze w kodzie ucznia, a kiedy lepiej poprawić nazwę zmiennej zamiast komentarza; czym różni się komentarz od kodu, który się wykonuje; podaj 3 dobre i 2 złe przykłady komentarzy w małym programie z main i pętlą for.
@@ -203,8 +203,9 @@ std::cout << "Cześć"; // używasz gotowego narzędzia — nie piszesz obsługi
 **Z biblioteką** wystarczą dwie linie: `#include` + `cout`.
 
 | Biblioteka | Co jest w „pudełku” | Po co uczniowi              |
-| ---------- | ------------------- | --------------------------- |
+|------------|---------------------|-----------------------------|
 | `iostream` | ekran, klawiatura   | pytanie użytkownika i wynik |
+| `string`   | tekst w zmiennych   | imię, słowo od użytkownika  |
 | `cmath`    | sinus, pierwiastek… | zadania matematyczne        |
 | `vector`   | duża tablica liczb  | zad. 19                     |
 
@@ -214,46 +215,48 @@ Im więcej potrzebujesz, tyle razy `#include` — ale tylko te, z których napra
 ### Z czego składa się taka linia?
 
 | Część        | Znaczenie                                                                 |
-| ------------ | ------------------------------------------------------------------------- |
+|--------------|---------------------------------------------------------------------------|
 | `#`          | Znaczy: to specjalna linia (nie jak zwykły kod w `main`)                  |
 | `include`    | **Dołącz** gotowy plik z opisem narzędzi (co wolno używać w kodzie)       |
 | `<iostream>` | Nazwa biblioteki w nawiasach ostrych — gotowa biblioteka dołączona do C++ |
 
-- Nawiasy **`< >`** — plik dołączany automatycznie z C++ (nie piszesz go sam).
-- Nawiasy **`" "`** — np. `#include "moj_plik.h"` — własny plik w projekcie (u nas prawie nie używamy).
+- Nawiasy `**< >`** — plik dołączany automatycznie z C++ (nie piszesz go sam).
+- Nawiasy `**" "`** — np. `#include "moj_plik.h"` — własny plik w projekcie (u nas prawie nie używamy).
 
 **Zasada:** jeśli w kodzie wołasz coś z danej biblioteki, na górze pliku musi być odpowiedni `#include`. Inaczej program przy kompilacji wypisze błąd — np. że nie zna `cout`.
 
 ### Wszystkie `#include` z naszych zadań — jedna tabela
 
-| Linia w kodzie        | Pełna nazwa / skrót                    | Po co to                                        | Co zyskujesz (przykłady)                        | Zadania    |
-| --------------------- | -------------------------------------- | ----------------------------------------------- | ----------------------------------------------- | ---------- |
-| `#include <iostream>` | ekran i klawiatura                     | pytanie i wynik na ekranie                      | `std::cout`, `std::cin`, `<<`, `>>`             | 1–8, 10–18 |
-| `#include <cmath>`    | liczby: sinus, pierwiastek…            | zadania z matematyką                            | `sin`, `cos`, `sqrt`, `ceil`, `floor`           | 6, 7, 10   |
-| `#include <vector>`   | tablica — wiele liczb pod rząd         | wiele liczb pod rzędu z numerem w tablicy `[ ]` | `std::vector<int> tab(1000, 0);`, `tab[i] = 5;` | 19         |
-| `#include <climits>`  | informacja o największej liczbie `int` | limit wielkości liczby                          | `INT_MAX` — ok. 2 147 483 647                   | 17         |
+| Linia w kodzie        | Pełna nazwa / skrót                    | Po co to                                        | Co zyskujesz (przykłady)                        | Zadania                        |
+|-----------------------|----------------------------------------|-------------------------------------------------|-------------------------------------------------|--------------------------------|
+| `#include <iostream>` | ekran i klawiatura                     | pytanie i wynik na ekranie                      | `std::cout`, `std::cin`, `<<`, `>>`             | 0, **01**, **002**, 1–8, 10–18 |
+| `#include <string>`   | tekst w zmiennych                      | wczytywanie imienia, łączenie napisów           | `std::string`, `cin >> imie`                    | **01**                         |
+| `#include <cmath>`    | liczby: sinus, pierwiastek…            | zadania z matematyką                            | `sin`, `cos`, `sqrt`, `ceil`, `floor`           | 6, 7, 10                       |
+| `#include <vector>`   | tablica — wiele liczb pod rząd         | wiele liczb pod rzędu z numerem w tablicy `[ ]` | `std::vector<int> tab(1000, 0);`, `tab[i] = 5;` | 19                             |
+| `#include <climits>`  | informacja o największej liczbie `int` | limit wielkości liczby                          | `INT_MAX` — ok. 2 147 483 647                   | 17                             |
 
 Każda biblioteka to **osobny zestaw narzędzi**. Nie musisz dołączać wszystkich — tylko te, z których korzystasz w danym pliku.
 
 
-| Biblioteka | Szczegóły w poradniku |
-| ---------- | --------------------- |
-| `iostream` | [§7 — `cout` i `cin`](#7-wypisywanie-na-ekran-i-wczytywanie-z-klawiatury) |
-| `cmath`    | [§12 — biblioteka `cmath`](#12-biblioteka-cmath-zad-6-7-10) |
-| `vector`   | [§13 — `vector`](#13-vector--elastyczna-tablica-zad-19) |
+| Biblioteka | Szczegóły w poradniku                                                                          |
+|------------|------------------------------------------------------------------------------------------------|
+| `iostream` | [§7 — `cout` i `cin](#7-wypisywanie-na-ekran-i-wczytywanie-z-klawiatury)`                      |
+| `string`   | [§6 — typy, `std::string](#6-zmienne-typy-const-long-long)`                                    |
+| `cmath`    | [§12 — biblioteka `cmath](#12-biblioteka-cmath-zad-6-7-10)`                                    |
+| `vector`   | [§13 — `vector](#13-vector--elastyczna-tablica-zad-19)`                                        |
 | `climits`  | `INT_MAX` — limit typu `int`; przy dużych liczbach patrz [§6](#6-zmienne-typy-const-long-long) |
-
 
 
 ### Jak to zapamiętać?
 
 1. Patrzysz w kod — widzisz np. `std::cout` → na górze pliku musi być `#include <iostream>`.
-2. Widzisz `sqrt` → potrzebujesz `#include <cmath>`.
-3. Kolejność zwykle nie ma znaczenia, ale **wszystkie `#include` dajemy na początku pliku**, przed funkcjami i `main`.
+2. Widzisz `std::string` → potrzebujesz `#include <string>`.
+3. Widzisz `sqrt` → potrzebujesz `#include <cmath>`.
+4. Kolejność zwykle nie ma znaczenia, ale **wszystkie `#include` dajemy na początku pliku**, przed funkcjami i `main`.
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i rozumiem, że #include <iostream> dołącza gotową bibliotekę. Wyjaśnij po polsku jak metaforę „pudełka z narzędziami”: czym jest plik nagłówkowy, dlaczego bez include nie znam cout, oraz czym różni się #include <...> od #include "...". Porównaj krótko iostream, cmath i vector — po co każda w typowym programie szkolnym. Na końcu podaj mini-listę: widzę w kodzie X → potrzebuję którego include.
@@ -270,14 +273,14 @@ std::cout << "Cześć";
 std::cin >> liczba;
 ```
 
-- **`std::cout`** — wypisywanie na ekran  
-- **`std::cin`** — wczytywanie z klawiatury  
+- `**std::cout**` — wypisywanie na ekran  
+- `**std::cin**` — wczytywanie z klawiatury
 
 Bez `std::` program często się nie skompiluje. Na ćwiczeniach **zawsze** pisz `std::cout` i `std::cin`.
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i muszę pisać std::cout oraz std::cin. Wyjaśnij po polsku prostymi słowami: co to jest przestrzeń nazw (namespace) std, dlaczego bez std:: kompilator się skarży, oraz czym jest using namespace std i dlaczego na lekcji często każą go nie używać. Podaj krótki przykład z dwoma „pudełkami” nazw, żebym zrozumiała ideę, nie tylko regułę.
@@ -311,12 +314,12 @@ int main() {
 ```
 
 | Co się dzieje                   | Wyjaśnienie                                                       |
-| ------------------------------- | ----------------------------------------------------------------- |
+|---------------------------------|-------------------------------------------------------------------|
 | Program dochodzi do `return 0;` | `main` się kończy, program **przestaje działać**                  |
 | Zwracana jest liczba **0**      | W systemie (Windows, Mac, Linux) **0 = wszystko OK**, bez błędu   |
 | Inna liczba (np. `return 1;`)   | Sygnał: program zakończył się z **błędem** (u nas rzadko używane) |
 
-**Na ćwiczeniach:** na końcu każdego `main` zawsze dopisz **`return 0;`** — tak robi się w prawie każdym zadaniu.
+**Na ćwiczeniach:** na końcu każdego `main` zawsze dopisz `**return 0;`** — tak robi się w prawie każdym zadaniu.
 
 Czy można bez tego? Czasem program i tak „dopisze” `return 0` sam, ale **lepiej napisać wprost** — wtedy wiesz, że program świadomie się kończy.
 
@@ -324,7 +327,7 @@ Czy można bez tego? Czasem program i tak „dopisze” `return 0` sam, ale **le
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i wiem, że program zaczyna się w int main() i kończy return 0;. Wyjaśnij po polsku: dlaczego musi być dokładnie jedna funkcja main, co oznacza int przed main, skąd system wie, że 0 to sukces, oraz co się dzieje krok po kroku od uruchomienia ./program do return 0. Porównaj return w main z return w innej funkcji na prostym przykładzie.
@@ -338,20 +341,32 @@ Typ zmiennej mówi komputerowi, **jakiego rodzaju** informację przechowujesz (c
 
 ### Tabela typów (te z ćwiczeń i okolice)
 
-| Typ         | Co przechowuje                              | Przykład w kodzie             | Gdzie u nas                            | Uwagi                                                 |
-| ----------- | ------------------------------------------- | ----------------------------- | -------------------------------------- | ----------------------------------------------------- |
-| `int`       | liczba całkowita (bez ułamka)               | `int n = 80;`                 | prawie wszystkie zadania               | np. -3, 0, 999; do ok. ±2 mld                         |
-| `long long` | bardzo duża liczba całkowita                | `long long n = 1838947883LL;` | zad. 16, 17 (mnożenie)                 | na końcu liczby często `LL`; większy zakres niż `int` |
-| `double`    | liczba z częścią ułamkową                   | `double a = 1.57;`            | zad. 6, 7                              | dokładniejsza niż `float`; kąty w radianach, `sqrt`   |
-| `float`     | liczba z ułamkiem (mniej miejsca w pamięci) | `float x = 3.14f;`            | zad. 10                                | litera `f` po liczbie; wystarczy do `ceil`/`floor`    |
-| `bool`      | tylko **prawda** lub **fałsz**              | `bool ok = true;`             | zad. 4, 5, funkcje typu `czy_pierwsza` | wartości: `true`, `false`; używane w `if`             |
-| `char`      | pojedynczy znak                             | `char odp = 't';`             | zad. 7 (odpowiedź t/n)                 | pojedyncze cudzysłowy: `'a'`, `'\n'`                  |
-| `const int` | stała — liczba, której **nie zmieniamy**    | `const int liczba = 80;`      | zad. 1, 11, 14, 19                     | po przypisaniu nie wolno pisać `liczba = 90;`         |
+| Typ           | Co przechowuje                              | Przykład w kodzie             | Gdzie u nas                                                | Uwagi                                                                                            |
+|---------------|---------------------------------------------|-------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| `int`         | liczba całkowita (bez ułamka)               | `int n = 80;`                 | prawie wszystkie zadania; zad. **002** (wiek z klawiatury) | np. -3, 0, 999; do ok. ±2 mld                                                                    |
+| `long long`   | bardzo duża liczba całkowita                | `long long n = 1838947883LL;` | zad. 16, 17 (mnożenie)                                     | na końcu liczby często `LL`; większy zakres niż `int`                                            |
+| `double`      | liczba z częścią ułamkową                   | `double a = 1.57;`            | zad. 6, 7                                                  | dokładniejsza niż `float`; kąty w radianach, `sqrt`                                              |
+| `float`       | liczba z ułamkiem (mniej miejsca w pamięci) | `float x = 3.14f;`            | zad. 10                                                    | litera `f` po liczbie; wystarczy do `ceil`/`floor`                                               |
+| `bool`        | tylko **prawda** lub **fałsz**              | `bool ok = true;`             | zad. 4, 5, funkcje typu `czy_pierwsza`                     | wartości: `true`, `false`; używane w `if`                                                        |
+| `std::string` | tekst — słowo lub krótszy napis             | `std::string imie = "Anna";`  | zad. **01** (pytanie o imię)                               | wymaga `#include <string>`; cudzysłów `" "`; `cin >> imie` wczytuje **jedno słowo** (bez spacji) |
+| `char`        | **jeden** znak                              | `char odp = 't';`             | zad. 7 (odpowiedź t/n)                                     | apostrofy `'a'`, `'\n'` — nie cały tekst, tylko pojedyncza litera                                |
+| `const int`   | stała — liczba, której **nie zmieniamy**    | `const int liczba = 80;`      | zad. 1, 11, 14, 19                                         | po przypisaniu nie wolno pisać `liczba = 90;`                                                    |
+
+#### Tekst: `char` vs `std::string` vs `"..."`
+
+W C++ masz **trzy** sposoby pracy z tekstem — łatwo je pomylić:
+
+- **Stały napis w kodzie** — `"Hello"` w `std::cout << "Hello";` (zad. 0, 1). To **literal**: wpisany na stałe w programie. Nie potrzebujesz `#include <string>`.
+- **Odpowiedź użytkownika (imię, słowo)** — `std::string imie;` i `std::cin >> imie;` (zad. **01**). Zmienna trzyma **wiele znaków** naraz.
+- **Odpowiedź liczbowa (wiek, liczba)** — `int wiek;` i `std::cin >> wiek;` (zad. **002**). Zmienna trzyma **liczbę całkowitą**, nie tekst — wystarczy `#include <iostream>`.
+- **Jedna litera** — `char odp = 't';` (zad. 7). Tylko **jeden** znak w apostrofach, np. tak/nie.
+
+`std::string` to gotowy typ z biblioteki C++ (jak `vector`), nie taki prosty jak `int` — dlatego na górze pliku musi być `#include <string>`.
 
 ### Typy „złożone” (pojawiają się rzadziej)
 
 | Typ / konstrukcja                        | Co to jest                                | Przykład                             | Gdzie u nas                    |
-| ---------------------------------------- | ----------------------------------------- | ------------------------------------ | ------------------------------ |
+|------------------------------------------|-------------------------------------------|--------------------------------------|--------------------------------|
 | `std::vector<int>`                       | tablica liczb `int` o zadanej długości    | `std::vector<int> suma(1000000, 0);` | zad. 19                        |
 | `void`                                   | funkcja tylko coś robi, nie oddaje liczby | rzadko u nas                         | —                              |
 | wynik funkcji `int`, `bool`, `long long` | co funkcja **zwraca** (oddaje z powrotem) | `bool czy_pierwsza(int n)`           | funkcje pomocnicze w zadaniach |
@@ -364,11 +379,11 @@ double kat = 1.57;      // liczba z częścią ułamkową (większa dokładnoś�
 float x = 3.14f;        // liczba z ułamkiem (mniejsza dokładność — zad. 10)
 bool tak = true;        // prawda (true) lub fałsz (false)
 long long duza = 1838947883LL;  // bardzo duża liczba całkowita (zad. 16)
+std::string imie = "Anna";   // tekst (zad. 01)
 ```
 
 - **Zapisanie zmiennej** — mówisz komputerowi, *jakiego typu* jest zmienna: `int a;`
 - **Przypisanie** — wkładasz wartość: `a = 5;` lub od razu: `int a = 5;`
-
 
 ### `long long` i sufiks `LL` (zad. 16, 17)
 
@@ -383,7 +398,7 @@ Przy mnożeniu dużych liczb (zad. 17) czasem liczymy na `long long`, żeby wyni
 ### Zmienna, stała i tablica — czym się różnią?
 
 | Pojęcie     | Prosta metafora          | W kodzie                          | Ile wartości?        | Czy można zmieniać później?                     |
-| ----------- | ------------------------ | --------------------------------- | -------------------- | ----------------------------------------------- |
+|-------------|--------------------------|-----------------------------------|----------------------|-------------------------------------------------|
 | **Zmienna** | jedno pudełko z etykietą | `int n = 5;`                      | **jedna**            | **tak** — `n = 10;`                             |
 | **Stała**   | pudełko z kłódką         | `const int liczba = 80;`          | **jedna**            | **nie** — wartość ustalona na stałe             |
 | **Tablica** | szafa wielu szuflad      | `std::vector<int> suma(1000, 0);` | **wiele** (np. 1000) | **tak** — każda szuflada osobno: `suma[3] = 7;` |
@@ -411,7 +426,7 @@ Po co? Żeby **nie zmienić przypadkiem** ważnej liczby z zadania (np. zawsze d
 
 #### Tablica — wiele wartości pod numerami 0, 1, 2, …
 
-W naszych zadaniach tablica to najczęściej **`std::vector`** (zad. 19):
+W naszych zadaniach tablica to najczęściej `**std::vector`** (zad. 19):
 
 ```cpp
 std::vector<int> suma(1000000, 0);   // milion „szuflad”, na start 0
@@ -419,8 +434,22 @@ suma[220] = 284;                      // w szufladzie nr 220 leży 284
 int b = suma[a];                      // odczyt ze szuflady nr a
 ```
 
-- **`suma`** — cała tablica (cała szafa).
-- **`suma[220]`** — **jedna** komórka o numerze 220 (jedna szuflada).
+Każda komórka ma **numer (indeks)** i **wartość** — numer to to, co wpisujesz w `[ ]`.
+
+**Numeracja od 0:** w C++ (i w `vector`) pierwsza komórka ma indeks **0**, nie 1. Pierwsza szuflada to `suma[0]`, druga to `suma[1]` — a nie `suma[1]` i `suma[2]`. W życiu codziennym liczysz „pierwszy, drugi, trzeci…”, w tablicy **pierwszy element = indeks 0**.
+
+
+| **numer `[i]`** | 0 | 1 | 2 | 3 | … | 220 | … |
+|-----------------|---|---|---|---|---|-----|---|
+| **zawartość**   | 0 | 0 | 0 | 0 | … | 284 | … |
+
+
+`suma[220]` to wartość z wiersza **zawartość**, w kolumnie **220**.
+
+Tablica o rozmiarze 1000 ma indeksy **0 … 999** — indeks **1000** jest już poza tablicą (błąd). Tak samo w zad. 19: milion elementów to indeksy **0 … 999999**.
+
+- `**suma`** — cała tablica (cała szafa).
+- `**suma[220]`** — **jedna** komórka o numerze 220 (jedna szuflada).
 - Numer w `[ ]` nazywa się **numerem w tablicy**.
 
 Tablica **nie zastępuje** zwykłej zmiennej — używasz jej, gdy potrzebujesz **wiele** liczb tego samego typu naraz (tu: suma dzielników dla każdej liczby od 2 do 999999).
@@ -444,7 +473,7 @@ Więcej o `vector`: [§13](#13-vector--elastyczna-tablica-zad-19).
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ (zadania szkolne: int, double, bool, const, long long, vector). Wyjaśnij po polsku prostymi słowami: kiedy wybrać int a kiedy long long, czym różni się double od float, po co const i co się stanie przy błędnej zmianie stałej. Podaj tabelę z przykładowymi liczbami, które się nie mieszczą w int, oraz 3 typowe błędy ucznia przy typach. Bez wchodzenia w wskaźniki.
@@ -454,8 +483,7 @@ Uczę się C++ (zadania szkolne: int, double, bool, const, long long, vector). W
 
 ## 7. Wypisywanie na ekran i wczytywanie z klawiatury
 
-W C++ tekst i liczby **wypisujemy na ekran** przez **`std::cout`**.  
-(W potocznym mówieniu można to nazwać „printem”, ale w kodzie używa się właśnie `cout`.)
+W C++ tekst i liczby **wypisujemy na ekran** przez `**std::cout`**.  
 
 Na górze pliku musi być:
 
@@ -467,9 +495,9 @@ Bez tego program nie zna `cout` ani `cin`.
 
 ### Wypisywanie na ekran (`std::cout`)
 
-**`cout`** = **cout** — skrót od wypisywania; wysyłanie tekstu i liczb **na ekran**.
+`**cout**` = **cout** — skrót od wypisywania; wysyłanie tekstu i liczb **na ekran**.
 
-**Jak to działa:** kolejne fragmenty **łączysz** znakiem **`<<`** („wyślij do ekranu”):
+**Jak to działa:** kolejne fragmenty **łączysz** znakiem `**<<`** („wyślij do ekranu”):
 
 ```cpp
 std::cout << "Cześć";           // sam tekst
@@ -480,7 +508,7 @@ std::cout << "Wynik: " << n;    // tekst i liczba w jednej linii poleceń
 Każde `<<` dokleja kolejną rzecz do tego, co leci na ekran — jak sklejanie kawałków od lewej do prawej.
 
 | Co wypisujesz        | Przykład                                | Uwaga                                |
-| -------------------- | --------------------------------------- | ------------------------------------ |
+|----------------------|-----------------------------------------|--------------------------------------|
 | tekst                | `std::cout << "Witaj!";`                | tekst w **cudzysłowie** `" "`        |
 | liczba               | `std::cout << n;`                       | bez cudzysłowów — to zmienna         |
 | tekst + liczba       | `std::cout << "a=" << a << " b=" << b;` | tyle `<<`, ile fragmentów            |
@@ -509,8 +537,8 @@ std::cout << "Suma: " << a + b << '\n';   // najpierw tekst, potem wynik dodawan
 
 ### Wczytywanie z klawiatury (`std::cin`)
 
-**`cin`** = **c**haracter **in**put (znaki **z wejścia**, czyli z klawiatury).  
-Znak **`>>`** czytamy: „wczytaj z klawiatury do zmiennej”.
+`**cin**` = **c**haracter **in**put (znaki **z wejścia**, czyli z klawiatury).  
+Znak `**>>`** czytamy: „wczytaj z klawiatury do zmiennej”.
 
 **Krok po kroku:**
 
@@ -539,12 +567,14 @@ std::cout << "Podales: " << n << '\n';      // potwierdzenie
 
 Zmienna musi **pasować** do tego, co użytkownik wpisze:
 
-| Typ zmiennej | Przykład wczytania | Co użytkownik wpisuje        |
-| ------------ | ------------------ | ---------------------------- |
-| `int`        | `std::cin >> n;`   | np. `500`                    |
-| `double`     | `std::cin >> a;`   | np. `1.57`                   |
-| `float`      | `std::cin >> x;`   | np. `3.14`                   |
-| `char`       | `std::cin >> odp;` | jeden znak, np. `t` (zad. 7) |
+
+| Typ zmiennej  | Przykład wczytania  | Co użytkownik wpisuje                  |
+|---------------|---------------------|----------------------------------------|
+| `int`         | `std::cin >> n;`    | np. `15` (wiek — zad. **002**), `500`  |
+| `double`      | `std::cin >> a;`    | np. `1.57`                             |
+| `float`       | `std::cin >> x;`    | np. `3.14`                             |
+| `std::string` | `std::cin >> imie;` | np. `Anna` — jedno słowo (zad. **01**) |
+| `char`        | `std::cin >> odp;`  | jeden znak, np. `t` (zad. 7)           |
 
 ### Dwa razy z klawiatury (np. zad. 5, 12)
 
@@ -563,7 +593,9 @@ std::cout << "Druga liczba: ";
 std::cin >> b;
 ```
 
-### Pełny minimalny program
+### Pełny minimalny program (zad. **002**)
+
+[ROZWIĄZANIE — 002.cpp](002.cpp)
 
 ```cpp
 #include <iostream>
@@ -577,10 +609,12 @@ int main() {
 }
 ```
 
+To naturalny krok po zad. **01** (wczytywanie tekstu): tu wczytujesz **liczbę** (`int`) z klawiatury, a potem wypisujesz ją w zdaniu. Przed zad. **1** (pętle) warto mieć opanowane oba warianty `cin`.
+
 ### Częste pytania
 
 | Pytanie                        | Odpowiedź                                                                     |
-| ------------------------------ | ----------------------------------------------------------------------------- |
+|--------------------------------|-------------------------------------------------------------------------------|
 | Jak coś wypisać na ekran?      | `std::cout << …` z `#include <iostream>`                                      |
 | Program „stoi” i nic nie robi? | Często **czeka na `cin`** — wpisz liczbę i Enter                              |
 | `cin` nie działa               | Sprawdź `#include <iostream>` i czy zmienna ma dobry typ (`int` vs `double`)  |
@@ -588,7 +622,7 @@ int main() {
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i używam std::cout z << oraz std::cin z >>. Wyjaśnij po polsku: dlaczego << to „do ekranu”, a >> „z klawiatury”, co robi '\n' i endl, oraz dlaczego program czasem „stoi” czekając na cin. Podaj 3 przykłady błędów (zły typ, brak spacji w tekście, podwójne wczytanie) i jak je naprawić. Na końcu krótki program: pytanie o wiek i odpowiedź jednym zdaniem.
@@ -598,7 +632,7 @@ Uczę się C++ i używam std::cout z << oraz std::cin z >>. Wyjaśnij po polsku:
 
 ## 8. Wyrażenia: znaki porównania, `&&`, `%`, `=` vs `==`
 
-Znaki porównania dają **`true`** lub **`false`** — idealne do `if`.
+Znaki porównania dają `**true**` lub `**false**` — idealne do `if`.
 
 ### Tabela: `<`, `>`, `<=`, `>=`, `==`, `!=`
 
@@ -637,12 +671,12 @@ if (n % d == 0)    // OK
 
 ### Łączenie dwóch warunków naraz
 
-| Znak | Znaczenie | Przykład |
-| ---- | --------- | -------- |
-| `&&` | **i** — oba warunki muszą być prawdziwe | `n % 3 == 0 && n % 17 == 0` |
-| `\|\|` | **lub** — wystarczy jeden prawdziwy | rzadziej w naszych zadaniach |
+| Znak   | Znaczenie                               | Przykład                     |
+|--------|-----------------------------------------|------------------------------|
+| `&&`   | **i** — oba warunki muszą być prawdziwe | `n % 3 == 0 && n % 17 == 0`  |
+| `\|\|` | **lub** — wystarczy jeden prawdziwy     | rzadziej w naszych zadaniach |
 
-Przypomnienie: w `if` używamy **`==`** do porównania, **`=`** tylko do przypisania wartości.
+Przypomnienie: w `if` używamy `**==`** do porównania, `**=`** tylko do przypisania wartości.
 
 ### Reszta z dzielenia `%`
 
@@ -653,7 +687,7 @@ Przypomnienie: w `if` używamy **`==`** do porównania, **`=`** tylko do przypis
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i mylę czasem = z == oraz używam <, >, <=, >=, !=, && i %. Wyjaśnij po polsku z przykładami liczbowymi: różnica przypisania i porównania, jak działa reszta % przy sprawdzaniu dzielników (np. 80 i 5), oraz kiedy użyć && a kiedy ||. Daj 5 mini-zadań „prawda czy fałsz?” z rozwiązaniami, żebym przećwiczyła przed if.
@@ -677,25 +711,9 @@ if (warunek) {
 **Jak to przebiega krok po kroku:**
 
 1. Komputer **oblicza warunek** w nawiasie po `if`.
-2. Jeśli wynik to **prawda** (`true`) → wchodzi do `{ }` i robi **kod A**.
+2. Jeśli wynik to **prawda** (`true`) → wchodzi do `{ }` i wykonuje **kod A**.
 3. Jeśli wynik to **fałsz** (`false`) → **pomija** kod A.
 4. Potem i tak idzie dalej — wykonuje **kod B**.
-
-```
-        warunek?
-       /        \
-     TAK         NIE
-|     |
-| --- |
-|     |
-   kod A      (pomiń A)
-      \         /
-       ----+----
-|     |
-| --- |
-|     |
-         kod B
-```
 
 ### `if` z `else` — „w przeciwnym razie”
 
@@ -725,7 +743,7 @@ if (liczba % i == 0) {
 Gdy `80 % 5 == 0` → prawda → wypisujemy `5`.  
 Gdy `80 % 6 != 0` → fałsz → nic nie wypisujemy i idziemy dalej w pętli.
 
-Warunek musi być **prawdą lub fałszem**. Znaki porównania: [§8](#8-wyrażenia-znaki-porównania-łączenie-warunków-=-vs-).
+Warunek musi być **prawdą lub fałszem**. [Znaki porównania — §8](#8-wyrażenia-znaki-porównania-łączenie-warunków-=-vs-).
 
 ### Jedna linia bez `{ }`
 
@@ -792,7 +810,7 @@ Najpierw sprawdzamy pierwszość; dopiero gdy liczba pierwsza, wchodzimy w drugi
 ### Częsty błąd: `=` zamiast `==`
 
 | Zapis    | Co robi             | W `if`?                                |
-| -------- | ------------------- | -------------------------------------- |
+|----------|---------------------|----------------------------------------|
 | `a == b` | czy **równa się**?  | tak — porównanie                       |
 | `a = b`  | **przypisz** b do a | źle w warunku (nie pytamy „czy równe”) |
 
@@ -801,16 +819,16 @@ Poprawnie: `if (n % d == 0)`
 
 ### Skrót: kiedy używać czego
 
-| Potrzebujesz                                     | Jak zapisać w kodzie      |
-| ------------------------------------------------ | ------------------------- |
-| zrób coś tylko gdy…                              | `if (warunek) { }`        |
-| zrób A albo B                                    | `if (…) { A } else { B }` |
-| kilka przypadków                                 | `if` … `else if` … `else` |
-| warunek z dwoma częściami (np. przez 3 **i** 17) | `if (a && b)` — [§8](#8-wyrażenia-znaki-porównania-łączenie-warunków-=-vs-)        |
+| Potrzebujesz                                     | Jak zapisać w kodzie                                                        |
+|--------------------------------------------------|-----------------------------------------------------------------------------|
+| zrób coś tylko gdy…                              | `if (warunek) { }`                                                          |
+| zrób A albo B                                    | `if (…) { A } else { B }`                                                   |
+| kilka przypadków                                 | `if` … `else if` … `else`                                                   |
+| warunek z dwoma częściami (np. przez 3 **i** 17) | `if (a && b)` — [§8](#8-wyrażenia-znaki-porównania-łączenie-warunków-=-vs-) |
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i używam if, else, else if oraz zagnieżdżonych warunków (np. dzielniki, porównanie kostek). Wyjaśnij po polsku krok po kroku: jak komputer wykonuje if z diagramem w słowach, kiedy potrzebne są nawiasy { }, oraz dlaczego if (n % d = 0) to błąd. Podaj jeden przykład z dzielnikami i jeden z else if (remis) z tabelą: warunek → co się wypisze.
@@ -850,10 +868,11 @@ for (int k = 1; ; ++k)               // nieskończona — wyjdziemy przez break
 
 **`++n`** to skrót od: **„zwiększ n o 1”**.
 
-| Zapis | To samo co      | Przykład: n było 5, potem…  |
-| ----- | --------------- | --------------------------- |
-| `++n` | `n = n + 1`     | n jest **6**                |
-| `n++` | też `n = n + 1` | n jest **6** (u nas rzadko) |
+| Zapis | To samo co      | Przykład: n było 5, potem…          |
+|-------|-----------------|-------------------------------------|
+| `++n` | `n = n + 1`     | n jest **6**                        |
+| `n++` | też `n = n + 1` | n jest **6** (gdy stoi sam w linii) |
+
 
 Litera po `++` to po prostu **nazwa zmiennej** — może być `i`, `n`, `d`, `k`, `ile`:
 
@@ -877,9 +896,30 @@ for (int n = 100; n <= 999; ++n) {
 3. Wykonaj `++n` — n zwiększa się o 1.
 4. Wróć do punktu 1.
 
-**`++n` (przed zmienną)** vs **`n++` (po zmiennej):**  
-W pętlach `for` i w naszych zadaniach używamy **`++n`** — efekt końcowy jest taki sam jak `n = n + 1`.  
-Różnica `++n` / `n++` ma znaczenie głównie w złożonych wyrażeniach — na start wystarczy pamiętać: **`++` = plus jeden**.
+### Różnica `++n` a `n++`
+
+Oba zwiększają zmienną o 1, ale **kolejność** ma znaczenie, gdy `++` siedzi w większym wyrażeniu:
+
+- **`++n`** — **przedinkrementacja** (plus **przed** zmienną): najpierw dodaje 1, potem używa nowej wartości
+- **`n++`** — **poinkrementacja** (plus **po** zmiennej): najpierw używa starej wartości, potem dodaje 1
+
+
+| Zapis | Nazwa              | Kolejność                                | Przykład: `n` było 5                         |
+|-------|--------------------|------------------------------------------|----------------------------------------------|
+| `++n` | przedinkrementacja | najpierw +1, potem używa wartości        | `cout << ++n` → wypisze **6**, potem `n` = 6 |
+| `n++` | poinkrementacja    | najpierw używa starej wartości, potem +1 | `cout << n++` → wypisze **5**, potem `n` = 6 |
+
+
+```cpp
+int n = 5;
+cout << ++n;   // wypisze 6 — najpierw n rośnie do 6, potem wypisujemy
+n = 5;
+cout << n++;   // wypisze 5 — najpierw wypisujemy starą wartość, potem n rośnie do 6
+```
+
+W pętlach `for` i w naszych zadaniach `++n` stoi zwykle **sam w linii** (jako krok pętli), np. `for (…; ++n)`. Wtedy `++n` i `n++` dają **ten sam efekt** — po wykonaniu `n` jest o 1 większe. W plikach z repo (`5.cpp`, `8.cpp` itd.) używamy `++n` / `++i` — to dobry zwyczaj.
+
+Różnica ma znaczenie dopiero, gdy `++` jest **w środku większego wyrażenia** (np. `a = ++n` vs `a = n++`) — na ten etap wystarczy pamiętać: **`++` = plus jeden**, a szczegóły prefix/postfix wrócą przy tablicach i bardziej złożonym kodzie.
 
 Powiązane: `n--` lub `--n` to **zmniejszenie o 1** (w naszych plikach rzadko).
 
@@ -902,7 +942,7 @@ while (true) {
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i używam pętli for (start; warunek; krok) oraz czasem while z break. Wyjaśnij po polsku: co dokładnie robią trzy części w nawiasie for na przykładzie i od 1 do 5, czym jest ++i, kiedy pętla się nie wykona ani razu, oraz różnica for vs while na prostym przykładzie. Narysuj w tekście tabelę wartości i dla i=1..4. Bez zaawansowanych trików.
@@ -929,7 +969,7 @@ int main() {
 ```
 
 | Część           | Znaczenie                                    |
-| --------------- | -------------------------------------------- |
+|-----------------|----------------------------------------------|
 | `bool`          | funkcja oddaje prawdę lub fałsz              |
 | `czy_pierwsza`  | nazwa funkcji                                |
 | `(int n)`       | liczba, którą podajesz do funkcji w nawiasie |
@@ -965,7 +1005,7 @@ bool suma_jest_pierwsza(int a, int b) {
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i piszę własne funkcje, np. bool czy_pierwsza(int n) z return true/false. Wyjaśnij po polsku prostymi słowami: czym jest parametr, czym jest return, jak wywołanie czy_pierwsza(17) „wchodzi” do funkcji i wraca wynikiem do if. Porównaj funkcję zwracającą int, bool i void na jednym mini-programie. Podaj 2 błędy ucznia (brak return, zła kolejność definicji).
@@ -978,7 +1018,7 @@ Uczę się C++ i piszę własne funkcje, np. bool czy_pierwsza(int n) z return t
 Po `#include <cmath>` możesz używać:
 
 | Funkcja    | Co robi                                         |
-| ---------- | ----------------------------------------------- |
+|------------|-------------------------------------------------|
 | `sin(a)`   | sinus kąta `a` (**w radianach**, nie stopniach) |
 | `cos(a)`   | cosinus                                         |
 | `sqrt(n)`  | pierwiastek kwadratowy                          |
@@ -989,7 +1029,7 @@ Stopnie na radiany: `radiany = stopnie * 3.14159265 / 180`
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i używam #include <cmath>: sin, cos, sqrt, ceil, floor. Wyjaśnij po polsku: dlaczego sin i cos biorą radiany (nie stopnie), jak przeliczyć 90° na radiany krok po kroku, oraz czym różni się ceil od floor na przykładach 3.2 i -3.2. Podaj krótki przykład: wczytaj kąt w stopniach, policz sinus i wypisz wynik — z komentarzem do każdej linii.
@@ -1010,9 +1050,15 @@ int b = suma[a];                      // odczyt
 Myśl o tym jak o szeregu pudełek numerowanych od 0: `suma[0]`, `suma[1]`, …  
 W zad. 19 pod numerem `n` trzymamy sumę dzielników właściwych liczby `n`.
 
+Pierwszy element to zawsze `[0]` — pełny schemat indeks → wartość: [§6 — Tablica](#tablica--wiele-wartości-pod-numerami-0-1-2-…).
+
+| **numer `[i]`** | 0 | 1 | 2 | 3 |
+|-----------------|---|---|---|---|
+| **zawartość**   | 0 | 0 | 0 | 0 |
+
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i w zadaniu 19 używam std::vector<int> suma(1000000, 0) oraz suma[n]. Wyjaśnij po polsku metaforą „szuflad”: czym vector różni się od jednej zmiennej int, co znaczy drugi argument 0 przy tworzeniu, dlaczego numeracja od 0, oraz co się stanie przy suma[1000000]. Porównaj krótko tablicę C++ vector z „wieloma pudełkami” bez wskaźników.
@@ -1027,7 +1073,7 @@ Uczę się C++ i w zadaniu 19 używam std::vector<int> suma(1000000, 0) oraz sum
 W C++ **to nie to samo** — mylą się na początku, bo wyglądają podobnie.
 
 | Nawias | Nazwa      | Do czego w naszych zadaniach                 | Przykład                                    |
-| ------ | ---------- | -------------------------------------------- | ------------------------------------------- |
+|--------|------------|----------------------------------------------|---------------------------------------------|
 | `( )`  | okrągłe    | **wywołanie funkcji**, liczenie w grupie     | `sqrt(n)`, `czy_pierwsza(17)`, `if (n < 2)` |
 | `[ ]`  | kwadratowe | **element tablicy / vectora** (który numer?) | `suma[n]`, `suma[a]` w zad. 19              |
 
@@ -1041,13 +1087,13 @@ sqrt(n)              // pierwiastek z n
 suma_dzielnikow_wlasciwych(28)
 ```
 
-2. **Grupowanie w warunkach** (kolejność liczenia):
+1. **Grupowanie w warunkach** (kolejność liczenia):
 
 ```cpp
 if ((a > b) && (b < limit))   // nawiasy pomagają czytać warunek
 ```
 
-3. **Para liczb na ekranie** — tylko tekst do wypisania, nie tablica:
+1. **Para liczb na ekranie** — tylko tekst do wypisania, nie tablica:
 
 ```cpp
 std::cout << "(" << a << ", " << b << ")\n";   // wypisze np. (220, 284)
@@ -1072,7 +1118,7 @@ int b = suma[a];     // odczyt pola nr a
 
 #### Uwaga: `[5; 6)` w treści zadania 7
 
-W README jest zapis **`[5; 6)`** — to **matematyczny przedział** (od 5 włącznie do 6 bez 6), **nie kod C++**.
+W README jest zapis `**[5; 6)`** — to **matematyczny przedział** (od 5 włącznie do 6 bez 6), **nie kod C++**.
 
 W programie piszesz np. `dolna`, `gorna` i `if` — a nie dosłownie `[5;6)` w pliku `.cpp`.
 
@@ -1085,7 +1131,7 @@ W programie piszesz np. `dolna`, `gorna` i `if` — a nie dosłownie `[5;6)` w p
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ i mylę nawiasy ( ) [ ] { } < >. Wyjaśnij po polsku z przykładami z dzielników i vectora: kiedy ( ) to wywołanie funkcji, kiedy [ ] to element tablicy, kiedy { } to blok kodu, a kiedy < > w #include. Podaj 5 linii kodu i poproś mnie mentalnie „co tu oznacza każdy nawias” — z odpowiedziami. Wyjaśnij też, że [5;6) w treści zadania to matematyka, nie C++.
@@ -1098,23 +1144,23 @@ Uczę się C++ i mylę nawiasy ( ) [ ] { } < >. Wyjaśnij po polsku z przykłada
 1. Przeczytaj **treść zadania** w komentarzu u góry pliku.
 2. Zobacz `#include` — jakie biblioteki są potrzebne.
 3. Przeczytaj **funkcje pomocnicze** (np. `czy_pierwsza`) — często to serce programu.
-4. Przejdź **`main()`** linia po linii.
+4. Przejdź `**main()`** linia po linii.
 5. Na końcu pliku przeczytaj blok **„JAK TO DZIAŁA?”**.
 
 Propozycja trudności:
 
-| Poziom       | Zadania          | Nowe pojęcia                                |
-| ------------ | ---------------- | ------------------------------------------- |
-| Start        | 1, 6, 10         | `main`, `for`, `if`, `cout`, `cin`, `cmath` |
-| Średni       | 2, 3, 5, 8, 11   | własne funkcje, `bool`                      |
-| Dalej        | 4, 7, 12, 14, 15 | `&&`, przedziały, `else if`                 |
-| Zaawansowane | 16–19            | `long long`, `vector`, większe pętle        |
+| Poziom       | Zadania                            | Nowe pojęcia                                                 |
+|--------------|------------------------------------|--------------------------------------------------------------|
+| Start        | 0, **01**, **002**, potem 1, 6, 10 | `main`, `cout`, `cin` (tekst i liczba), `for`, `if`, `cmath` |
+| Średni       | 2, 3, 5, 8, 11                     | własne funkcje, `bool`                                       |
+| Dalej        | 4, 7, 12, 14, 15                   | `&&`, przedziały, `else if`                                  |
+| Zaawansowane | 16–19                              | `long long`, `vector`, większe pętle                         |
 
 Zadanie **9** to arkusz kalkulacyjny — instrukcja w [9.md](9.md), nie w C++.
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ z plików zadań 1–19 (komentarz u góry, #include, funkcje pomocnicze, main, blok „JAK TO DZIAŁA?” na końcu). Wyjaśnij po polsku strategię czytania cudzego kodu linia po linii: od czego zacząć, jak notować pytania, jak sprawdzić zrozumienie bez kopiowania. Zaproponuj plan nauki na 2 tygodnie dla poziomu start (zad. 1,6,10) → średni → zaawansowany. Krótko, konkretnie.
@@ -1125,7 +1171,7 @@ Uczę się C++ z plików zadań 1–19 (komentarz u góry, #include, funkcje pom
 ## 16. Słowniczek na szybko
 
 | Słowo                          | Krótko                                                |
-| ------------------------------ | ----------------------------------------------------- |
+|--------------------------------|-------------------------------------------------------|
 | kompilacja                     | zamiana `.cpp` na program do uruchomienia             |
 | `main`                         | funkcja startowa                                      |
 | `return`                       | zwróć wynik z funkcji / zakończ `main`                |
@@ -1134,10 +1180,12 @@ Uczę się C++ z plików zadań 1–19 (komentarz u góry, #include, funkcje pom
 | dzielnik                       | liczba, przez którą dzielimy bez reszty               |
 | liczba pierwsza                | dzieli się tylko przez 1 i przez siebie               |
 | liczba złożona                 | ma więcej dzielników niż 1 i ona sama                 |
+| `std::string`                  | zmienna na tekst (wiele znaków), np. imię użytkownika |
+
 
 ### CHCESZ WIEDZIEĆ WIĘCEJ?
 
-Skopiuj poniższy prompt do darmowego ChatGPT (chat.openai.com), żeby pogłębić zrozumienie tego rozdziału:
+Skopiuj poniższy prompt do darmowego ChatGPT ([chat.openai.com](https://chat.openai.com)), żeby pogłębić zrozumienie tego rozdziału:
 
 ```
 Uczę się C++ od zera i znam już słowniczek: kompilacja, main, return, pętla, dzielnik, liczba pierwsza/złożona. Wyjaśnij po polsku każde z tych pojęć jednym zdaniem i jednym przykładem liczbowym lub linią kodu. Na końcu zadaj mi 5 pytań sprawdzających (jak quiz) i podaj odpowiedzi — żebym wiedziała, czego jeszcze nie rozumiem.

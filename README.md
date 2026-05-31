@@ -10,6 +10,10 @@
 
 [ROZWIĄZANIE TUTAJ - kliknij](01.cpp)
 
+002. Napisz program, który pyta użytkownika o wiek, wczytuje liczbę całkowitą (`int`) i wypisuje odpowiedź: `Masz … lat.` Uczy `cin` z liczbą (w przeciwieństwie do zad. 01, gdzie wczytywany jest tekst).
+
+[ROZWIĄZANIE TUTAJ - kliknij](002.cpp)
+
 1. Napisz program wyznaczający wszystkie dzielniki liczby 80.
 
 [ROZWIĄZANIE TUTAJ - kliknij](1.cpp)

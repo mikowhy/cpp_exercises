@@ -1,5 +1,5 @@
 /*
- * Zadanie 002:
+ * Zadanie 02:
  * Program pyta o wiek, wczytuje liczbe calkowita i wypisuje odpowiedz.
  */
 

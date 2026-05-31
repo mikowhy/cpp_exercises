@@ -227,13 +227,13 @@ Im więcej potrzebujesz, tyle razy `#include` — ale tylko te, z których napra
 
 ### Wszystkie `#include` z naszych zadań — jedna tabela
 
-| Linia w kodzie        | Pełna nazwa / skrót                    | Po co to                                        | Co zyskujesz (przykłady)                        | Zadania                        |
-|-----------------------|----------------------------------------|-------------------------------------------------|-------------------------------------------------|--------------------------------|
-| `#include <iostream>` | ekran i klawiatura                     | pytanie i wynik na ekranie                      | `std::cout`, `std::cin`, `<<`, `>>`             | 0, **01**, **002**, 1–8, 10–18 |
-| `#include <string>`   | tekst w zmiennych                      | wczytywanie imienia, łączenie napisów           | `std::string`, `cin >> imie`                    | **01**                         |
-| `#include <cmath>`    | liczby: sinus, pierwiastek…            | zadania z matematyką                            | `sin`, `cos`, `sqrt`, `ceil`, `floor`           | 6, 7, 10                       |
-| `#include <vector>`   | tablica — wiele liczb pod rząd         | wiele liczb pod rzędu z numerem w tablicy `[ ]` | `std::vector<int> tab(1000, 0);`, `tab[i] = 5;` | 19                             |
-| `#include <climits>`  | informacja o największej liczbie `int` | limit wielkości liczby                          | `INT_MAX` — ok. 2 147 483 647                   | 17                             |
+| Linia w kodzie        | Pełna nazwa / skrót                    | Po co to                                        | Co zyskujesz (przykłady)                        | Zadania                       |
+|-----------------------|----------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------|
+| `#include <iostream>` | ekran i klawiatura                     | pytanie i wynik na ekranie                      | `std::cout`, `std::cin`, `<<`, `>>`             | 0, **01**, **02**, 1–8, 10–18 |
+| `#include <string>`   | tekst w zmiennych                      | wczytywanie imienia, łączenie napisów           | `std::string`, `cin >> imie`                    | **01**                        |
+| `#include <cmath>`    | liczby: sinus, pierwiastek…            | zadania z matematyką                            | `sin`, `cos`, `sqrt`, `ceil`, `floor`           | 6, 7, 10                      |
+| `#include <vector>`   | tablica — wiele liczb pod rząd         | wiele liczb pod rzędu z numerem w tablicy `[ ]` | `std::vector<int> tab(1000, 0);`, `tab[i] = 5;` | 19                            |
+| `#include <climits>`  | informacja o największej liczbie `int` | limit wielkości liczby                          | `INT_MAX` — ok. 2 147 483 647                   | 17                            |
 
 Każda biblioteka to **osobny zestaw narzędzi**. Nie musisz dołączać wszystkich — tylko te, z których korzystasz w danym pliku.
 
@@ -341,16 +341,16 @@ Typ zmiennej mówi komputerowi, **jakiego rodzaju** informację przechowujesz (c
 
 ### Tabela typów (te z ćwiczeń i okolice)
 
-| Typ           | Co przechowuje                              | Przykład w kodzie             | Gdzie u nas                                                | Uwagi                                                                                            |
-|---------------|---------------------------------------------|-------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| `int`         | liczba całkowita (bez ułamka)               | `int n = 80;`                 | prawie wszystkie zadania; zad. **002** (wiek z klawiatury) | np. -3, 0, 999; do ok. ±2 mld                                                                    |
-| `long long`   | bardzo duża liczba całkowita                | `long long n = 1838947883LL;` | zad. 16, 17 (mnożenie)                                     | na końcu liczby często `LL`; większy zakres niż `int`                                            |
-| `double`      | liczba z częścią ułamkową                   | `double a = 1.57;`            | zad. 6, 7                                                  | dokładniejsza niż `float`; kąty w radianach, `sqrt`                                              |
-| `float`       | liczba z ułamkiem (mniej miejsca w pamięci) | `float x = 3.14f;`            | zad. 10                                                    | litera `f` po liczbie; wystarczy do `ceil`/`floor`                                               |
-| `bool`        | tylko **prawda** lub **fałsz**              | `bool ok = true;`             | zad. 4, 5, funkcje typu `czy_pierwsza`                     | wartości: `true`, `false`; używane w `if`                                                        |
-| `std::string` | tekst — słowo lub krótszy napis             | `std::string imie = "Anna";`  | zad. **01** (pytanie o imię)                               | wymaga `#include <string>`; cudzysłów `" "`; `cin >> imie` wczytuje **jedno słowo** (bez spacji) |
-| `char`        | **jeden** znak                              | `char odp = 't';`             | zad. 7 (odpowiedź t/n)                                     | apostrofy `'a'`, `'\n'` — nie cały tekst, tylko pojedyncza litera                                |
-| `const int`   | stała — liczba, której **nie zmieniamy**    | `const int liczba = 80;`      | zad. 1, 11, 14, 19                                         | po przypisaniu nie wolno pisać `liczba = 90;`                                                    |
+| Typ           | Co przechowuje                              | Przykład w kodzie             | Gdzie u nas                                               | Uwagi                                                                                            |
+|---------------|---------------------------------------------|-------------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| `int`         | liczba całkowita (bez ułamka)               | `int n = 80;`                 | prawie wszystkie zadania; zad. **02** (wiek z klawiatury) | np. -3, 0, 999; do ok. ±2 mld                                                                    |
+| `long long`   | bardzo duża liczba całkowita                | `long long n = 1838947883LL;` | zad. 16, 17 (mnożenie)                                    | na końcu liczby często `LL`; większy zakres niż `int`                                            |
+| `double`      | liczba z częścią ułamkową                   | `double a = 1.57;`            | zad. 6, 7                                                 | dokładniejsza niż `float`; kąty w radianach, `sqrt`                                              |
+| `float`       | liczba z ułamkiem (mniej miejsca w pamięci) | `float x = 3.14f;`            | zad. 10                                                   | litera `f` po liczbie; wystarczy do `ceil`/`floor`                                               |
+| `bool`        | tylko **prawda** lub **fałsz**              | `bool ok = true;`             | zad. 4, 5, funkcje typu `czy_pierwsza`                    | wartości: `true`, `false`; używane w `if`                                                        |
+| `std::string` | tekst — słowo lub krótszy napis             | `std::string imie = "Anna";`  | zad. **01** (pytanie o imię)                              | wymaga `#include <string>`; cudzysłów `" "`; `cin >> imie` wczytuje **jedno słowo** (bez spacji) |
+| `char`        | **jeden** znak                              | `char odp = 't';`             | zad. 7 (odpowiedź t/n)                                    | apostrofy `'a'`, `'\n'` — nie cały tekst, tylko pojedyncza litera                                |
+| `const int`   | stała — liczba, której **nie zmieniamy**    | `const int liczba = 80;`      | zad. 1, 11, 14, 19                                        | po przypisaniu nie wolno pisać `liczba = 90;`                                                    |
 
 #### Tekst: `char` vs `std::string` vs `"..."`
 
@@ -358,7 +358,7 @@ W C++ masz **trzy** sposoby pracy z tekstem — łatwo je pomylić:
 
 - **Stały napis w kodzie** — `"Hello"` w `std::cout << "Hello";` (zad. 0, 1). To **literal**: wpisany na stałe w programie. Nie potrzebujesz `#include <string>`.
 - **Odpowiedź użytkownika (imię, słowo)** — `std::string imie;` i `std::cin >> imie;` (zad. **01**). Zmienna trzyma **wiele znaków** naraz.
-- **Odpowiedź liczbowa (wiek, liczba)** — `int wiek;` i `std::cin >> wiek;` (zad. **002**). Zmienna trzyma **liczbę całkowitą**, nie tekst — wystarczy `#include <iostream>`.
+- **Odpowiedź liczbowa (wiek, liczba)** — `int wiek;` i `std::cin >> wiek;` (zad. **02**). Zmienna trzyma **liczbę całkowitą**, nie tekst — wystarczy `#include <iostream>`.
 - **Jedna litera** — `char odp = 't';` (zad. 7). Tylko **jeden** znak w apostrofach, np. tak/nie.
 
 `std::string` to gotowy typ z biblioteki C++ (jak `vector`), nie taki prosty jak `int` — dlatego na górze pliku musi być `#include <string>`.
@@ -570,7 +570,7 @@ Zmienna musi **pasować** do tego, co użytkownik wpisze:
 
 | Typ zmiennej  | Przykład wczytania  | Co użytkownik wpisuje                  |
 |---------------|---------------------|----------------------------------------|
-| `int`         | `std::cin >> n;`    | np. `15` (wiek — zad. **002**), `500`  |
+| `int`         | `std::cin >> n;`    | np. `15` (wiek — zad. **02**), `500`   |
 | `double`      | `std::cin >> a;`    | np. `1.57`                             |
 | `float`       | `std::cin >> x;`    | np. `3.14`                             |
 | `std::string` | `std::cin >> imie;` | np. `Anna` — jedno słowo (zad. **01**) |
@@ -593,9 +593,9 @@ std::cout << "Druga liczba: ";
 std::cin >> b;
 ```
 
-### Pełny minimalny program (zad. **002**)
+### Pełny minimalny program (zad. **02**)
 
-[ROZWIĄZANIE — 002.cpp](002.cpp)
+[ROZWIĄZANIE — 02.cpp](02.cpp)
 
 ```cpp
 #include <iostream>
@@ -1149,12 +1149,12 @@ Uczę się C++ i mylę nawiasy ( ) [ ] { } < >. Wyjaśnij po polsku z przykłada
 
 Propozycja trudności:
 
-| Poziom       | Zadania                            | Nowe pojęcia                                                 |
-|--------------|------------------------------------|--------------------------------------------------------------|
-| Start        | 0, **01**, **002**, potem 1, 6, 10 | `main`, `cout`, `cin` (tekst i liczba), `for`, `if`, `cmath` |
-| Średni       | 2, 3, 5, 8, 11                     | własne funkcje, `bool`                                       |
-| Dalej        | 4, 7, 12, 14, 15                   | `&&`, przedziały, `else if`                                  |
-| Zaawansowane | 16–19                              | `long long`, `vector`, większe pętle                         |
+| Poziom       | Zadania                           | Nowe pojęcia                                                 |
+|--------------|-----------------------------------|--------------------------------------------------------------|
+| Start        | 0, **01**, **02**, potem 1, 6, 10 | `main`, `cout`, `cin` (tekst i liczba), `for`, `if`, `cmath` |
+| Średni       | 2, 3, 5, 8, 11                    | własne funkcje, `bool`                                       |
+| Dalej        | 4, 7, 12, 14, 15                  | `&&`, przedziały, `else if`                                  |
+| Zaawansowane | 16–19                             | `long long`, `vector`, większe pętle                         |
 
 Zadanie **9** to arkusz kalkulacyjny — instrukcja w [9.md](9.md), nie w C++.
 

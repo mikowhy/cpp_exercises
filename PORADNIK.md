@@ -427,6 +427,8 @@ Po co? Żeby **nie zmienić przypadkiem** ważnej liczby z zadania (np. zawsze d
 
 `const` = **const**ant = stała.
 
+<a id="tablica--wiele-wartości-pod-numerami-0-1-2-…"></a>
+
 #### Tablica — wiele wartości pod numerami 0, 1, 2, …
 
 W naszych zadaniach tablica to najczęściej `**std::vector`** (zad. 19):
@@ -632,6 +634,8 @@ Uczę się C++ i używam std::cout z << oraz std::cin z >>. Wyjaśnij po polsku:
 ```
 
 ---
+
+<a id="8-wyrażenia-znaki-porównania-łączenie-warunków-=-vs-"></a>
 
 ## 8. Wyrażenia: znaki porównania, `&&`, `%`, `=` vs `==`
 

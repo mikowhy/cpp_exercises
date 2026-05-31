@@ -32,7 +32,10 @@ cmake-build-*/
 *.dSYM/
 
 # Executables without extension (e.g. g++ -o 1 1.cpp)
-/[0-9]*
+/[0-9]
+/[0-9][0-9]
+# Named build outputs (e.g. g++ -o zad0 0.cpp)
+/zad*
 
 # Build directories
 build/

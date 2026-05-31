@@ -5,10 +5,13 @@ Nie musisz wszystkiego uczyć się na pamięć — po prostu wyszukaj, gdy w kod
 
 **Jak korzystać:** trzymaj ten plik obok otwartego `.cpp`, użyj wyszukiwania (Ctrl+F / Cmd+F) po słowie kluczowym (`for`, `vector`, `cin`…). Masz pytanie przy konkretnej linii w `5.cpp` lub `12.cpp`? Wyszukaj hasło w poradniku.
 
+> **Masz Windows?** **[JAK-ZACZAC-WINDOWS.md](JAK-ZACZAC-WINDOWS.md)** — m.in. **darmowe kompilatory online** (bez instalacji) oraz konfiguracja VS Code + `g++`.
+
 ---
 
 ## Spis treści
 
+0. [Windows: online, wybór programu, konfiguracja g++](JAK-ZACZAC-WINDOWS.md) — także [online za darmo](JAK-ZACZAC-WINDOWS.md#online-za-darmo)
 1. [Kompilacja i rodzaje plików](#1-kompilacja-i-rodzaje-plików)
   - [Dwa rodzaje plików](#dwa-rodzaje-plików--najważniejsze)
   - [Kompilacja krok po kroku](#co-to-jest-kompilacja)
@@ -80,7 +83,7 @@ g++ -std=c++17 -Wall 1.cpp -o zad1
 ```
 
 | Część        | Znaczenie                                                               |
-| ------------ | ----------------------------------------------------------------------- |
+|--------------|-------------------------------------------------------------------------|
 | `g++`        | program do tłumaczenia kodu (musi być zainstalowany)                    |
 | `-std=c++17` | używamy wersji języka C++17 (jak w README)                              |
 | `-Wall`      | pokaż więcej ostrzeżeń — pomaga łapać błędy                             |
@@ -88,7 +91,7 @@ g++ -std=c++17 -Wall 1.cpp -o zad1
 | `-o zad1`    | **wyjście** — jak ma nazywać się plik wykonywalny                       |
 | `./zad1`     | **uruchom** program (Mac / Linux; kropka-slash = „z bieżącego folderu”) |
 
-Na **Windows** w PowerShell często: `.\zad1.exe` (jeśli program dodał `.exe`).
+Na **Windows** w PowerShell często: `.\zad1.exe` (jeśli program dodał `.exe`). Jeśli `g++` nie działa lub dopiero zaczynasz na Windowsie, zobacz **[JAK-ZACZAC-WINDOWS.md](JAK-ZACZAC-WINDOWS.md)**.
 
 ---
 

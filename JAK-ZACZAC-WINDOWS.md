@@ -4,7 +4,9 @@ Krótki przewodnik dla ucznia: **bez instalacji** (online), **programy na komput
 
 ---
 
-## Kompiluj online za darmo (bez instalacji) {#online-za-darmo}
+<a id="online-za-darmo"></a>
+
+## Kompiluj online za darmo (bez instalacji)
 
 > **Kiedy to się opłaca:** nie możesz teraz nic instalować; chcesz szybko sprawdzić fragment kodu; pracujesz na cudzym komputerze.
 >
@@ -29,7 +31,9 @@ Krótki przewodnik dla ucznia: **bez instalacji** (online), **programy na komput
 
 ---
 
-## Programy na komputerze (Windows) {#inne-programy}
+<a id="inne-programy"></a>
+
+## Programy na komputerze (Windows)
 
 Na Windows **nie ma jednego „oficjalnego” programu do C++** jak czasem na Macu w sali — wybierasz narzędzie. Do ćwiczeń z tego repozytorium najlepiej coś z komendą **`g++` w terminalu** (jak w [Poradniku](PORADNIK.md), §1).
 
@@ -57,7 +61,9 @@ Jeśli masz **Code::Blocks** z MinGW, w folderze zadań możesz też otworzyć t
 
 ---
 
-## Opcja rekomendowana: VS Code + g++ {#vscode-msys2}
+<a id="vscode-msys2"></a>
+
+## Opcja rekomendowana: VS Code + g++
 
 To **jedna z opcji** z tabeli powyżej. Wybraliśmy ją, bo pasuje do komend z [Poradnika](PORADNIK.md): `g++ -std=c++17 -Wall` i plików `.cpp` z tego folderu.
 

@@ -2,7 +2,6 @@
  * Zadanie 4:
  * Napisz funkcję, która będzie badała podzielność podanej liczby jednocześnie
  * przez 3 i 17. W teście użyj pojedynczej instrukcji logicznej (bez operatora &).
- * (W README literówki: „317”, „&8” — rozwiązujemy 3 i 17, test z &&.)
  */
 
 // iostream — wczytywanie (cin) i wypisywanie (cout) na ekran

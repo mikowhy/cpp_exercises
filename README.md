@@ -26,7 +26,7 @@
 
 [ROZWIĄZANIE TUTAJ - kliknij](3.cpp)
 
-4. Napisz funkcję, która będzie badała podzielność podanej liczby jednocześnie przez 317. W teście użyj pojedynczej instrukcji logicznej (bez operatora `&8`).
+4. Napisz funkcję, która będzie badała podzielność podanej liczby jednocześnie przez 3 i 17. W teście użyj pojedynczej instrukcji logicznej (bez operatora `&`).
 
 [ROZWIĄZANIE TUTAJ - kliknij](4.cpp)
 

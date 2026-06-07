@@ -35,7 +35,7 @@ cmake-build-*/
 /[0-9]
 /[0-9][0-9]
 # Named build outputs (e.g. g++ -o zad0 0.cpp)
-/zad*
+zad*
 
 # Build directories
 build/
